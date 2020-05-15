@@ -4,38 +4,38 @@ import authenticationController from "../controllers/authentication.js";
 
 const ui = /*html*/ `
 <div class="d-flex w-100 h-100 d-flex-center" id="login-page">
-  <div class="card rounded w-300px">
-	<form id="js-formRegister">
-	  <h3 class="text-center">Register</h3>
-	  <div class="form-group">
-		<label class="required">Email</label>
-		<input type="email" id="email" class="form-control" />
-		<small class="invalid-feedback"></small>
-	  </div>
-	  <div class="form-group">
-		<label class="required">Display Name</label>
-		<input type="text" class="form-control" id="displayName" />
-		<small class="invalid-feedback"></small>
-	  </div>
-	  <div class="form-group">
-		<label class="required">Password</label>
-		<input type="password" class="form-control" id="password" />
-		<small class="invalid-feedback"></small>
-	  </div>
-	  <div class="form-group">
-		<label class="required">Confirm Password</label>
-		<input type="password" class="form-control" id="confirmPassword"/>
-		<small class="invalid-feedback"></small>
-	  </div>
-	  <div class="form-group text-center">
-		<button type="submit" class="btn btn-primary font-size-20px">Register</button>
+	<div class="card rounded w-300px">
+		<form id="js-formRegister">
+			<h3 class="text-center">Register</h3>
+			<div class="form-group">
+				<label class="required">Email</label>
+				<input type="email" id="email" class="form-control" />
+				<small class="invalid-feedback"></small>
+			</div>
+			<div class="form-group">
+				<label class="required">Display Name</label>
+				<input type="text" class="form-control" id="displayName" />
+				<small class="invalid-feedback"></small>
+			</div>
+			<div class="form-group">
+				<label class="required">Password</label>
+				<input type="password" class="form-control" id="password" />
+				<small class="invalid-feedback"></small>
+			</div>
+			<div class="form-group">
+				<label class="required">Confirm Password</label>
+				<input type="password" class="form-control" id="confirmPassword"/>
+				<small class="invalid-feedback"></small>
+			</div>
+			<div class="form-group text-center">
+				<button type="submit" class="btn btn-primary font-size-20px">Register</button>
+			</div>
+			<p class="form-group text-center">Or</p>
+			<div class="form-group text-center">
+				<button type="button" class="btn btn-secondary" id="js-btnGotoLogin">Go to Login</button>
+			</div>
+		</form>
 	</div>
-		<p class="form-group text-center">Or</p>
-		<div class="form-group text-center">
-		<button type="button" class="btn btn-secondary" id="js-btnGotoLogin">Go to Login</button>
-	  </div>
-	</form>
-  </div>
 </div>
 `;
 

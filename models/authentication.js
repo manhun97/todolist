@@ -1,6 +1,6 @@
 import setScreen from "../index.js";
-// import chatScreen from "../views/chat.js";
-// import chatModel from "./chat.js";
+import todoScreen from "../views/todo.js";
+import todoModel from "./todo.js";
 
 const authenticationModel = {
 	saveUser: async function (user) {
@@ -20,8 +20,8 @@ firebase.auth().onAuthStateChanged(function (user) {
 	if (user !== null) {
 		if (user.emailVerified) {
 			console.log(user.uid);
-			// redirect to chat screen
-			// setScreen(chatScreen);
+			// redirect to todo screen
+			setScreen(todoScreen);
 			// chatModel.listenCon();
 			// chatModel.listenMsg();
 		} else {
