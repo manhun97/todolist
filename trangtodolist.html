@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My todo list</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="trangtodolist.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">My list</a></li>
+        <li><a href="#">Scheduler</a></li>
+        <li><a href="#">project</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <!-- Tạo đồng hồ thời gian cho web -->
+    <p id="demo"></p>
+      <h1>My todo list</h1>
+      <div class="mb-3">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPost">Add things</button>
+      </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="addPost">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form id="frmNewPost" onsubmit="addPost(event);">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add things</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="postjob">Job</label>
+                            <input type="text" class="form-control" placeholder="Enter job" id="postjob">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="posttime">Time</label>
+                            <input type="text" class="form-control" placeholder="Enter time" id="posttime">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="postdate">Date</label>
+                            <input type="text" class="form-control" placeholder="Enter date" id="postdate">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="postlink">Add link</label>
+                            <input type="text" class="form-control" placeholder="Enter link" id="postlink">
+                                
+                        </div>
+
+                        
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Job</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Countdown</th>
+              <th>Action 1</th>
+              <th>Action 2</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Do homework</td>
+              <td>25/5/2020</td>
+              <td>20h:00'</td>
+              <td>15h:00'</td>
+              <td><button type="button" class="btn">Edit</button></td>
+              <td><button type="button" class="btn"></button></td>
+
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Go to school</td>
+              <td>25/5/2020</td>
+              <td>8h:00'</td>
+              <td>15h:00'</td>
+              <td><button type="button" class="btn">Edit</button></td>
+              <td><button type="button" class="btn">Delete</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Online study</td>
+              <td>25/5/2020</td>
+              <td>10h:00'</td>
+              <td>15h:00'</td>
+              <td><button type="button" class="btn">Edit</button></td>
+              <td><button type="button" class="btn">Delete</button></td>
+            
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
