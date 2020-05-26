@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAeS7qEcThJIb7w7vglkjG1t4tpLzud4KI",
+        authDomain: "todo-2307b.firebaseapp.com",
+        databaseURL: "https://todo-2307b.firebaseio.com",
+        projectId: "todo-2307b",
+        storageBucket: "todo-2307b.appspot.com",
+        messagingSenderId: "428274519570",
+        appId: "1:428274519570:web:811eb5416765a5d7da12cb",
+        measurementId: "G-PTTBN7WHBX"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./index.js"
+        type="module"></script>
+
+</html>
