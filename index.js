@@ -54,7 +54,7 @@ class item {
 
     }
 
-    edit(input) {
+    edit(input, name) {
         if (input.disabled == true) {
             input.disabled = !input.disabled;
         } else {
