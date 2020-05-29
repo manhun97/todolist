@@ -1,6 +1,6 @@
 import setScreen from "../index.js";
-import todoScreen from "../views/todo.js";
-import todoModel from "./todo.js";
+// import todoScreen from "../views/todo.js";
+// import todoModel from "./trangtodolist.js";
 
 const authenticationModel = {
 	saveUser: async function (user) {
@@ -21,9 +21,10 @@ firebase.auth().onAuthStateChanged(function (user) {
 		if (user.emailVerified) {
 			console.log(user.uid);
 			// redirect to todo screen
-			setScreen(todoScreen);
-			// chatModel.listenCon();
-			// chatModel.listenMsg();
+			function Redirect() {
+				window.location = "../views/todo.html";
+			}
+			Redirect();
 		} else {
 			//Step 1: show email verified error
 			alert("Please confirm your email!");
